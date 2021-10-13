@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <inet.h>
+#include <arpa/inet.h>
 #include <sys/socket.h>
 void error_handling(char *message);
 
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     memset(&serv_addr, 0, sizeof(serv_addr));
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    serv_addr.sin_port = htons(atoi(argv[1]))；
+    serv_addr.sin_port = htons(atoi(argv[1]));
 
     //调用bind函数分配IP地址和端口号
     if (bind(serv_sock, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) == -1)
