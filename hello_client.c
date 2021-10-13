@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
     error_handling("connect() error!");
     }
 
-    ser_len = read(sock, message, sizeof(message) - 1);
+    str_len = read(sock, message, sizeof(message) - 1);
     if (str_len == -1)
     {
         error_handling("read() error!");
@@ -56,3 +56,4 @@ void error_handling(char *message)
     fputc('\n', stderr);
     exit(1);
 }
+
