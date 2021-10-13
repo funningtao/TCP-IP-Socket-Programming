@@ -1,0 +1,10 @@
+先运行server
+gcc hello_server.c -o hserver
+./hserver 9190
+
+运行客户端client
+gcc hello_client.c -o hclient
+./hclient 127.0.0.1 9190
+
+127.0.0.1是运行的计算机的IP地址
+采用服务端所在计算机的IP地址
