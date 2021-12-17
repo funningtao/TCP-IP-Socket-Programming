@@ -9,3 +9,4 @@ gcc hello_client.c -o hclient
 127.0.0.1是运行的计算机的IP地址
 采用服务端所在计算机的IP地址
 
+# test
