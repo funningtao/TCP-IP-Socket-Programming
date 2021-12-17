@@ -57,8 +57,3 @@ void error_handling(char *message)
     exit(1);
 }
 
-<<<<<<< HEAD
-// test_c
-=======
-// test
->>>>>>> 947fe1b... test
