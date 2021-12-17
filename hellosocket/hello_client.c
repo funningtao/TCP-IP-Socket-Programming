@@ -56,5 +56,3 @@ void error_handling(char *message)
     fputc('\n', stderr);
     exit(1);
 }
-
-// test_c_1
